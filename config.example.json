@@ -1,0 +1,12 @@
+{
+  "mode": "manual",
+  "timezone": "America/Sao_Paulo",
+  "calendar_id": "primary",
+  "calendar": {
+    "account": "",
+    "sources": [{"calendar_id": "primary"}]
+  },
+  "mac_project_dir": "",
+  "drive_folder_id": null,
+  "meeting_contexts": {}
+}

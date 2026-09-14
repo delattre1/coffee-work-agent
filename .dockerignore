@@ -1,0 +1,7 @@
+plow-credentials
+agent.env
+.git
+source
+reference
+__pycache__
+*.pyc

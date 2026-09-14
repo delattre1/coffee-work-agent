@@ -1,0 +1,21 @@
+#!/bin/sh
+# Calendar watcher: the Plow/Latch relay is authenticated by first boot.
+set -eu
+PATH=/command:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+export PATH
+
+# These values are root-owned container environment files. Read the allowlist
+# before dropping to the agent uid; never source the agent-writable dotenv.
+PLOW_MCP_URL=$(cat /run/s6/container_environment/PLOW_MCP_URL 2>/dev/null || true)
+PLOW_AGENT_TOKEN=$(cat /run/s6/container_environment/PLOW_AGENT_TOKEN 2>/dev/null || true)
+PLOW_API_BASE=$(cat /run/s6/container_environment/PLOW_API_BASE 2>/dev/null || true)
+PLOW_HOME_CHANNEL=$(cat /run/s6/container_environment/PLOW_HOME_CHANNEL 2>/dev/null || true)
+export PLOW_MCP_URL PLOW_AGENT_TOKEN PLOW_API_BASE PLOW_HOME_CHANNEL
+
+while :; do
+  /command/s6-setuidgid hermes \
+    /opt/hermes/.venv/bin/python3 \
+    /opt/hermes/skills/ld-calendar-orquestrator/scripts/calendar_job.py \
+    || echo "coffee-work calendar: watcher failed; retrying in 600s" >&2
+  /bin/sleep 600
+done

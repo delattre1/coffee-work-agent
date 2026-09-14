@@ -1,0 +1,14 @@
+services:
+  agent:
+    build: .
+    environment:
+      AGENT_ID: ${AGENT_ID:?Register your Agent Index ID first}
+    volumes:
+      - ./plow-credentials:/var/lib/plow/credentials.host:ro
+      # Reuse the Mac companion's non-secret preferences (mode, calendar
+      # source ids and Mac checkout path). OAuth tokens are never stored here.
+      - ${HOME}/.coffee-work/config.json:/var/lib/hermes/coffee-work/config.json:ro
+      - agent-home:/var/lib/hermes
+    stop_grace_period: 35s
+volumes:
+  agent-home:

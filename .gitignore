@@ -1,0 +1,15 @@
+plow-credentials
+agent.env
+*.pyc
+__pycache__/
+data/*.json
+*.egg-info/
+.env
+plow-credentials
+*.key
+*.token
+google-client-secret.json
+google-token.json
+__pycache__/
+*.pyc
+.DS_Store

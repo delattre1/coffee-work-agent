@@ -1,0 +1,76 @@
+{
+  "family": {
+    "timezone": "America/Sao_Paulo",
+    "owner": {
+      "imessage": {}
+    }
+  },
+  "uber": {
+    "enabled": true,
+    "environment": "sandbox",
+    "client_id": "",
+    "client_secret_env": "HERMES_UBER_CLIENT_SECRET",
+    "redirect_uri": "http://127.0.0.1:8765/oauth/uber/callback",
+    "scopes": [
+      "request",
+      "profile"
+    ],
+    "scheduled_scopes": [
+      "guests.trips"
+    ],
+    "default_product": "uberX",
+    "product_fallbacks": [
+      "uberx",
+      "rideshare"
+    ],
+    "approval": {
+      "required": true,
+      "max_auto_approve_brl": 0
+    },
+    "pickup": {
+      "mode": "configured",
+      "place": "home"
+    },
+    "places": {
+      "home": {
+        "latitude": null,
+        "longitude": null,
+        "address": ""
+      },
+      "work": {
+        "latitude": null,
+        "longitude": null,
+        "address": ""
+      },
+      "airport": {
+        "latitude": null,
+        "longitude": null,
+        "address": ""
+      }
+    },
+    "defaults": {
+      "arrival_buffer_minutes": 10
+    },
+    "scheduled_enabled": false,
+    "organization_uuid": "",
+    "guest": {
+      "first_name": "",
+      "last_name": "",
+      "phone_number": "",
+      "email": ""
+    },
+    "sandbox_simulation_enabled": false,
+    "imessage_provider": {
+      "argv": []
+    },
+    "calendar_provider": {
+      "argv": []
+    },
+    "location_provider": {
+      "argv": []
+    },
+    "geocoder_provider": {
+      "argv": []
+    }
+  }
+}

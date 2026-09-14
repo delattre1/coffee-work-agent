@@ -1,0 +1,3 @@
+# Scheduled / Reserve
+
+Do **not** send future scheduling fields to Rider `POST /v1.2/requests`. Scheduled/Reserve is implemented through Guest Trips when the developer account/use case is eligible. First call `POST /v1/guests/trips/estimates` to discover Guest Ride products/fares for the route and requested time; then create with `POST /v1/guests/trips` and `scheduling.pickup_time` in epoch milliseconds. Third-party integrations may require `x-uber-organizationuuid`; sandbox Guest Rides may require a sandbox run UUID. Keep `scheduled_enabled=false` until these permissions and organization details are verified.

@@ -1,0 +1,6 @@
+name	path	invocation
+coffee-work	coffee-work/SKILL.md	conversation
+ld-calendar-orquestrator	ld-calendar-orquestrator/SKILL.md	conversation + Latch calendar watcher 600s
+ld-mac-prepare-native	ld-mac-prepare-native/SKILL.md	conversation + approved automatic preparation
+hermes-uber-ride-agent	hermes-uber-ride-agent/SKILL.md	conversation, exact fare approval
+hermes-browser-booking-no-api	hermes_browser_booking_no_api/SKILL.md	manual requests only

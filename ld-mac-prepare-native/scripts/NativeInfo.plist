@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key>
+  <string>com.hermes.prepare-my-mac.native-meeting</string>
+  <key>CFBundleName</key>
+  <string>Hermes Prepare My Mac</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>Hermes records the microphone only after your explicit confirmation.</string>
+  <key>NSSpeechRecognitionUsageDescription</key>
+  <string>Hermes transcribes saved meeting audio on this Mac.</string>
+  <key>NSScreenCaptureUsageDescription</key>
+  <string>Hermes captures call audio only after your explicit confirmation.</string>
+</dict>
+</plist>
