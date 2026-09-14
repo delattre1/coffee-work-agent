@@ -292,4 +292,4 @@ For a complete smoke test, send the Calendar question first, then use the meetin
 
 ## License and acknowledgements
 
-Coffee Work is open source under [Apache-2.0](LICENSE). See [NOTICE](NOTICE) for upstream components and attributions.
+Coffee Work is open source under the MIT License. See [NOTICE](NOTICE) for upstream components and attributions.
