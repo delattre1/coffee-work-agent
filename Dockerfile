@@ -1,4 +1,4 @@
-FROM public.ecr.aws/e1h7x4a2/plow-cloud-agents:base-c3aad2bacdcf2787067c5caf27707183dbcc71e5@sha256:6e1eaf43474efe62f860ecf1298f8602ea452591298aab52ab40a5fa2dc54ebb
+FROM public.ecr.aws/e1h7x4a2/plow-cloud-agents:base-51f83158a70a383f03a4d03dbd8b6ea102cf0361@sha256:253d7ed3409effa7fa59113d93b4b79bb731d8264cdaf4cd60294924d0110a2e
 COPY runtime/persona.md /opt/hermes/plow-seed/persona.md
 COPY coffee-work/ /opt/hermes/skills/coffee-work/
 COPY ld-calendar-orquestrator/ /opt/hermes/skills/ld-calendar-orquestrator/
