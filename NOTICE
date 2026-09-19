@@ -6,5 +6,4 @@ This product includes software developed at The Plow Collective, Inc (https://pl
 Coffee Work incorporates user-provided examples: ld-mac-prepare, ld-uber-ride,
 ld-calendar-nudge, and hermes_browser_booking. The calendar nudge reference
 scripts are included for provenance only; the new Coffee Work scheduler uses
-coffee_work/core.py. The Agent Index reporter and pinned client installation
-pattern are adapted from plow-pbc/life-assistant-hermes-agent.
+coffee_work/core.py. The Agent Index reporter ships in the Plow base image.

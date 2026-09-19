@@ -150,7 +150,7 @@ Set a unique Agent Index identifier in `.env`, for example:
 AGENT_ID=coffee-work-leandro
 ```
 
-Save nano with `Control + O`, press `Return`, then exit with `Control + X`. The project includes the required Agent Index Client reporter. Use a unique `coffee-work-*` value so the usage is attributed to your agent.
+Save nano with `Control + O`, press `Return`, then exit with `Control + X`. The Plow base image includes the required Agent Index reporter. Use a unique `coffee-work-*` value so the usage is attributed to your agent.
 
 ### 6. Install the Mac helper and choose its mode
 
